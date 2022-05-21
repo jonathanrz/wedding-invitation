@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/wedding-invitation/static/js/main.34ce13ea.js",
+    "static/js/787.9b74c651.chunk.js": "/wedding-invitation/static/js/787.9b74c651.chunk.js",
+    "static/media/AphroditeSlimPro.otf": "/wedding-invitation/static/media/AphroditeSlimPro.7516d832133c5b7493f5.otf",
+    "static/media/YaquoteScript.ttf": "/wedding-invitation/static/media/YaquoteScript.2d9bc56d0d9579ff0f5b.ttf",
+    "static/media/Freebooter.ttf": "/wedding-invitation/static/media/Freebooter.2b15b5d8d2230f1c298c.ttf",
+    "static/media/AlexBrush.ttf": "/wedding-invitation/static/media/AlexBrush.b50947ef756f43126a52.ttf",
+    "static/media/Darleston.otf": "/wedding-invitation/static/media/Darleston.886e712abdcc1e8dcaba.otf",
+    "index.html": "/wedding-invitation/index.html",
+    "main.34ce13ea.js.map": "/wedding-invitation/static/js/main.34ce13ea.js.map",
+    "787.9b74c651.chunk.js.map": "/wedding-invitation/static/js/787.9b74c651.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.34ce13ea.js"
+  ]
+}
