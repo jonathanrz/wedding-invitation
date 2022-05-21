@@ -43,6 +43,12 @@ const RetsukoImg = styled.img`
   width: 200px;
 `;
 
+const PS5Img = styled.img`
+  position: absolute;
+  top: 0;
+  right: 0;
+`;
+
 const Text = styled.p`
   text-align: center;
   margin: 0;
@@ -80,6 +86,7 @@ function App() {
       <KikiImg src={`${process.env.PUBLIC_URL}/images/kiki.png`} />
       <RetsukoImg src={`${process.env.PUBLIC_URL}/images/retsuko.png`} />
       <ThriathlonImg src={`${process.env.PUBLIC_URL}/images/triathlon.jpeg`} />
+      <PS5Img src={`${process.env.PUBLIC_URL}/images/ps5.png`} />
 
       <Content>
         <Guests>{guests.join(" e ")}</Guests>
