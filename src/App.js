@@ -17,6 +17,19 @@ function App() {
         mouthType="Smile"
         skinColor="Light"
       />
+      <Avatar
+        avatarStyle="Transparent"
+        topType="LongHairStraightStrand"
+        accessoriesType="Blank"
+        hairColor="Brown"
+        facialHairType="Blank"
+        clotheType="Hoodie"
+        clotheColor="Gray02"
+        eyeType="Happy"
+        eyebrowType="RaisedExcited"
+        mouthType="Smile"
+        skinColor="Light"
+      />
     </div>
   );
 }
