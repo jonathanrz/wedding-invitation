@@ -4,11 +4,34 @@ import styled from "styled-components";
 const Container = styled.div`
   display: grid;
   justify-content: center;
+  gap: 1rem;
   width: 100%;
+`;
 
-  p {
-    text-align: center;
-  }
+const AvatarContainer = styled.div`
+  display: flex;
+  width: 424px;
+  margin: auto;
+`;
+
+const Text = styled.p`
+  text-align: center;
+  margin: 0;
+
+  font-family: Darleston;
+`;
+
+const Guests = styled(Text)`
+  font-size: 5rem;
+  margin-top: 2rem;
+`;
+
+const Invitation = styled(Text)`
+  font-size: 3rem;
+`;
+
+const Date = styled(Text)`
+  font-size: 2rem;
 `;
 
 const SecondAvatar = styled.div`
@@ -25,9 +48,9 @@ function App() {
 
   return (
     <Container>
-      <p>{guests.join(" e ")}</p>
-      <p>Vocês estão convidados para o nosso casamento</p>
-      <div>
+      <Guests>{guests.join(" e ")}</Guests>
+      <Invitation>Vocês estão convidados para o nosso casamento</Invitation>
+      <AvatarContainer>
         <Avatar
           avatarStyle="Transparent"
           topType="ShortHairShortFlat"
@@ -57,8 +80,8 @@ function App() {
             skinColor="Light"
           />
         </SecondAvatar>
-      </div>
-      <p>11 de junho de 2022 as 19h</p>
+      </AvatarContainer>
+      <Date>11 de junho de 2022 as 19h</Date>
     </Container>
   );
 }
