@@ -10,8 +10,11 @@ const Container = styled.div`
 
 const AvatarContainer = styled.div`
   display: flex;
-  width: 424px;
   margin: auto;
+`;
+
+const SallyImg = styled.img`
+  width: 200px;
 `;
 
 const Text = styled.p`
@@ -80,6 +83,7 @@ function App() {
             skinColor="Light"
           />
         </SecondAvatar>
+        <SallyImg src={`${process.env.PUBLIC_URL}/images/sally.jpeg`} />
       </AvatarContainer>
       <Date>11 de junho de 2022 as 19h</Date>
     </Container>
