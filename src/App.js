@@ -53,7 +53,7 @@ const Text = styled.p`
   text-align: center;
   margin: 0;
 
-  font-family: Darleston;
+  font-family: AphroditeSlimPro;
 `;
 
 const Guests = styled(Text)`
@@ -63,10 +63,14 @@ const Guests = styled(Text)`
 
 const Invitation = styled(Text)`
   font-size: 3rem;
+
+  font-family: Darleston;
 `;
 
 const Date = styled(Text)`
   font-size: 2rem;
+
+  font-family: Darleston;
 `;
 
 const SecondAvatar = styled.div`
@@ -84,7 +88,7 @@ function App() {
   return (
     <Container>
       <KikiImg src={`${process.env.PUBLIC_URL}/images/kiki.png`} />
-      <RetsukoImg src={`${process.env.PUBLIC_URL}/images/retsuko.png`} />
+      <RetsukoImg src={`${process.env.PUBLIC_URL}/images/retsuko.gif`} />
       <ThriathlonImg src={`${process.env.PUBLIC_URL}/images/triathlon.jpeg`} />
       <PS5Img src={`${process.env.PUBLIC_URL}/images/ps5.png`} />
 
