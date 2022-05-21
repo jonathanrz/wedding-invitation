@@ -1,52 +1,62 @@
 import Avatar from "avataaars";
 import styled from "styled-components";
 
-const Container = styled.div`
-  display: grid;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-`;
-
-const Content = styled.div`
-  display: grid;
-  gap: 1rem;
-`;
-
-const AvatarContainer = styled.div`
-  display: flex;
-  margin: auto;
-`;
-
 const ThriathlonImg = styled.img`
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 200px;
+  width: 150px;
 `;
 
 const SallyImg = styled.img`
   width: 200px;
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 150px;
 `;
 
 const KikiImg = styled.img`
   position: absolute;
   right: 0;
   bottom: 0;
+  width: 150px;
 `;
 
 const RetsukoImg = styled.img`
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 150px;
 `;
 
 const PS5Img = styled.img`
   position: absolute;
   top: 0;
   right: 0;
+  width: 150px;
+`;
+
+const Container = styled.div`
+  display: grid;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+`;
+
+const Content = styled.div`
+  display: grid;
+  gap: 0.5rem;
+  max-height: 70vh;
+  margin-top: 15vh;
+`;
+
+const AvatarContainer = styled.div`
+  display: flex;
+  margin: auto;
+  position: relative;
+  margin-top: -3rem;
 `;
 
 const Text = styled.p`
@@ -57,14 +67,13 @@ const Text = styled.p`
 `;
 
 const Guests = styled(Text)`
-  font-size: 5rem;
-  margin-top: 2rem;
+  font-size: 2rem;
 `;
 
 const Invitation = styled(Text)`
-  font-size: 3rem;
-
+  font-size: 2rem;
   font-family: Darleston;
+  margin-top: -3rem;
 `;
 
 const Date = styled(Text)`
@@ -125,7 +134,7 @@ function App() {
               skinColor="Light"
             />
           </SecondAvatar>
-          <SallyImg src={`${process.env.PUBLIC_URL}/images/sally.jpeg`} />
+          <SallyImg src={`${process.env.PUBLIC_URL}/images/cat7.png`} />
         </AvatarContainer>
         <Date>11 de junho de 2022 as 19h</Date>
       </Content>
