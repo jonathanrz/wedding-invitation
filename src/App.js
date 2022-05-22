@@ -37,19 +37,32 @@ const PS5Img = styled.img`
   width: 150px;
 `;
 
+const WheelImg = styled.img`
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 150px;
+`;
+
+const PlaneImg = styled.img`
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 150px;
+`;
+
 const Container = styled.div`
   display: grid;
   justify-content: center;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 700px;
+  height: 600px;
+  margin: auto;
   position: relative;
 `;
 
 const Content = styled.div`
   display: grid;
   gap: 0.5rem;
-  max-height: 70vh;
-  margin-top: 15vh;
 `;
 
 const AvatarContainer = styled.div`
@@ -78,8 +91,9 @@ const Invitation = styled(Text)`
 
 const Date = styled(Text)`
   font-size: 2rem;
-
   font-family: Darleston;
+
+  margin-bottom: -2rem;
 `;
 
 const SecondAvatar = styled.div`
@@ -97,9 +111,13 @@ function App() {
   return (
     <Container>
       <KikiImg src={`${process.env.PUBLIC_URL}/images/kiki.png`} />
-      <RetsukoImg src={`${process.env.PUBLIC_URL}/images/retsuko.gif`} />
+      <RetsukoImg src={`${process.env.PUBLIC_URL}/images/retsuko.png`} />
       <ThriathlonImg src={`${process.env.PUBLIC_URL}/images/triathlon.jpeg`} />
       <PS5Img src={`${process.env.PUBLIC_URL}/images/ps5.png`} />
+      <PlaneImg src={`${process.env.PUBLIC_URL}/images/plane.png`} />
+      <WheelImg
+        src={`${process.env.PUBLIC_URL}/images/poço-quadrado-infinito.png`}
+      />
 
       <Content>
         <Guests>{guests.join(" e ")}</Guests>
@@ -112,8 +130,8 @@ function App() {
             hairColor="Blonde"
             facialHairType="BeardLight"
             facialHairColor="Blonde"
-            clotheType="ShirtScoopNeck"
-            clotheColor="Black"
+            clotheType="ShirtCrewNeck"
+            clotheColor="Blue03"
             eyeType="Wink"
             eyebrowType="Default"
             mouthType="Smile"
@@ -134,9 +152,14 @@ function App() {
               skinColor="Light"
             />
           </SecondAvatar>
-          <SallyImg src={`${process.env.PUBLIC_URL}/images/cat7.png`} />
+          <SallyImg src={`${process.env.PUBLIC_URL}/images/sally.png`} />
         </AvatarContainer>
-        <Date>11 de junho de 2022 as 19h</Date>
+        <Date>
+          <div>11 de junho de 2022 as 19h</div>
+          <div style={{ marginTop: "5px" }}>
+            Salão de festas do condomínio Vila Florence
+          </div>
+        </Date>
       </Content>
     </Container>
   );
